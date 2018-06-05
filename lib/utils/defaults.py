@@ -1,5 +1,6 @@
 import os
 import json
+import time
 
 def rtMessage(status,msg):
     data = {"status":status,
@@ -10,5 +11,4 @@ def rtError(msg):
     return json.dumps(rtMessage("error",msg))
 
 def rtSuccess(msg):
-    return json.dumps(rtMessage("success",msg))
-
+    return json.dumps(rtMessage("success",msg)) 
